@@ -1,0 +1,37 @@
+{
+  "feature_count": 64,
+  "targets": [
+    {
+      "target": "future_5_return",
+      "model_path": "models_lgbm\\model_future_5_return.joblib",
+      "importance_path": "models_lgbm\\feature_importance_future_5_return.csv",
+      "blend_weight": {
+        "main": 0.75,
+        "ridge": 0.15,
+        "reversion": 0.1
+      },
+      "direction_threshold": -9.004337153142248e-05
+    },
+    {
+      "target": "future_60_return",
+      "model_path": "models_lgbm\\model_future_60_return.joblib",
+      "importance_path": "models_lgbm\\feature_importance_future_60_return.csv",
+      "blend_weight": {
+        "main": 0.85,
+        "ridge": 0.0,
+        "reversion": 0.15
+      },
+      "direction_threshold": -0.0002575207418306504
+    }
+  ],
+  "reproducibility": {
+    "random_state": 2026,
+    "framework_resolved": "lightgbm",
+    "lgbm_n_jobs": 1,
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0",
+    "lightgbm": "4.6.0"
+  },
+  "metrics_path": "models_lgbm\\walk_forward_metrics.csv"
+}
